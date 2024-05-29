@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 18px;
+
+        }
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+        /* header{
+            position: sticky;
+            top: 0px;
+        } */
+        .con1{
+            max-width: 100%;
+            background-color: #fc0015;
+            /* height: 53px; */
+            display: flex;
+            justify-content: flex-end;
+        }
+        .con1_side {
+    padding-right: 80px;
+    /* width: 30%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+        .con2 {
+    max-width: 100%;
+    background-color: black;
+    display: flex;
+    box-shadow: 0px -1px 6px black, 0px 3px red;
+    justify-content: space-around;
+    align-items: center;
+}
+        .log {
+    order: 2;
+            padding-left: 40px;
+    color: #b20313 ;
+    font-weight: 600;
+}
+        .sear {
+    width: 202px;
+    height: 32px;
+    background-color: #b20313 ;
+    position: relative;
+    i{
+        color: #fc0015;
+    position: absolute;
+    font-size: 23px;
+    top: 3px;
+    right: 6px;
+    }
+}
+.nav_ul {
+    list-style: none;
+    /* float: left; */
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    /* position: absolute;
+    right: 100px;
+    top: 60px; */
+}
+.con2 img{
+    /* position: relative;
+    left: 80px; */
+    width: 260px;
+}
+.con2 .fa-bars{
+    display: none;
+}
+.nav_ul li {
+    font-size: 18px;
+    padding: 6px 20px;
+}
+.con3{
+    max-width: 100%;
+    margin: auto;
+    .p1{
+        padding: 20px 10px 30px 50px;
+        font-weight: 400;
+    }
+}
+.con4 {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    
+    height: 160px;
+    background-color: #b8b8b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.con4 p {
+    box-sizing: border-box;
+    /* padding: 62px 355px; */
+    color: white;
+    font-size: 24px;
+
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+}
+.con4 + p {
+    font-size: 33px;
+    text-align: center;
+    margin: 70px 0px;
+    font-style: italic;
+}
+.con5 {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+.con5_img {
+    width: 70%;
+    max-width: 700px;
+    img {
+        width: 100%;
+}
+}
+.con5_txt {
+    display: flex;
+    width: 30%;
+    max-width: 300px;
+    background-color: #ff8635;
+    flex-direction: column;
+    align-items: center;
+    max-height: 459px;
+    img {
+    max-width: 90%;
+    width: 250px;
+    padding: 10px;
+}
+}
+.con5_txt p {
+    max-width: 80%;
+    padding:50px ;
+}
+.con6 {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    margin: auto;
+    padding: 30px 0px;
+    line-height: 25px;
+}
+.con7 {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    margin: auto;
+    line-height: 25px;
+}
+.but {
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+}
+.but button{
+    margin: auto;
+    background-color: #fc0015;
+    padding: 17px 40px;
+    font-size: 22px ;
+    color: white;
+    border: none;
+}
+.but button:hover{
+    background-color: #2d2f57;
+}
+.con9{
+    background-color: #2360ef;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    color: white;
+    p{
+    padding: 22px 15px;
+    
+    }
+    .p2{
+        font-weight: 600;
+    }
+    .fa-plus{
+    display: block;
+    float: right;
+    padding: 2px;
+    border: solid 1px ;
+    border-radius: 50%;
+    }
+    .fa-minus{
+    display: none;
+    float: right;
+    padding: 2px;
+    border: solid 1px ;
+    border-radius: 50%;
+    }
+}
+
+#p3,#p4,#p5,#p6{
+        display: none;
+        padding: 0px 15px 10px 15px;
+        margin-top: -10px;
+}
+    
+.con8{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+.con10{
+    background-color: #f7922a;
+    max-width: 100%;
+    margin: auto;
+}
+.tpf{
+    justify-content: center;
+    display: flex;
+}
+
+.con10_align {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+.con10_left {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    justify-content: center;
+    align-items: center;
+    p{
+        font-size: 21px;
+    }
+}
+.star i{
+    font-size: 35px;
+}
+.con10_right {
+    width: 100%;
+    max-width: 500px;
+    img{
+        width: 100%;
+        max-width: 390px;
+        padding: 30px 10px;
+    }
+}
+.con10_txt{
+    font-size: 13px !important;
+    /* padding: 0px 20px 0px 45px; */
+}
+.con10_l{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    img{
+        width: 100%;
+        max-width: 240px;
+    }
+}
+.tpf1{
+        margin-top: 60px;
+         color: #2d2f57;
+         font-size: 90px;
+         margin-bottom: 0px;
+
+}
+.tpf2{
+        color: #2d2f57;
+        margin-top: 83px;
+        font-size: 30px;
+}
+.faq{
+    background-color: #eeeeee;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    color: black;
+    p{
+    padding:4px 15px;
+    }
+    i{
+    float: right;
+    padding: 5px;
+    }
+}
+.con12 {
+    background-color: #ff8635;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+#con12-i1 {
+    max-width: 100%;
+}
+#con12-i2 {
+    max-width: 50%;
+}
+.con13 {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    justify-content: center;
+}
+.con14{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    margin: auto;
+}
+.con15 {
+    background-color: #0070b8;
+    max-width: 100%;
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+.ico {
+    padding-left: 55px;
+    width: 100%;
+    max-width: 260px;
+}
+.ico img {
+    width: 48px;
+    padding: 7px;
+}
+.con16{
+    background-color: black;
+    width: 100%;
+    margin: auto;
+    color: #696969;
+    display: flex;
+    flex-direction: row;
+    padding: 45px 15px;
+    box-sizing: border-box;
+
+    p{
+        line-height: 1.7;
+        span{
+            color: #2360ef;
+            font-style: italic;
+        }
+    }
+    ul{
+        list-style: none;
+        padding-top: 20px;
+        line-height: 1.5;
+    }
+    .con16_left {
+    flex: 2;
+    }
+    .f_mid {
+    flex: 1;
+    display: flex;
+}
+}
+.con16.copy {
+    padding: 0px;
+}
+.copy p{
+    padding: 20px 0px 8px 90px;
+    border-top: solid 2px #0070b8;
+}
+@media all and (max-width:1088px){
+    .con16{
+        flex-direction: column;
+    }
+    .f_mid{
+        justify-content: center;
+    }
+    .con16_left{
+        .ico{
+            margin: auto;
+            padding: 0px;
+        }
+    }
+    .con16 p{
+        text-align: center;
+    }
+    .con4{
+        max-width: 800px;
+        height: 145px;
+        p{
+            font-size:22px ;
+        }
+    }
+    .con4 + p{
+        font-size: 30px;
+    }
+    .con6,.con7,.con8{
+        max-width: 800px;
+    }
+    .but button{
+        padding: 14px 34px;
+        font-size: 21px;
+    }
+    .con9,.faq,.con13,.con14{
+        max-width: 800px;
+    }
+    .txt{
+        
+        padding: 0px !important;
+        text-align: center;
+    }
+    .copy p{
+        padding:20px 0px ;
+    }
+    .con5{
+        max-width: 800px;
+    }
+    .con5_txt{
+        max-height: 367px;
+    }
+    .con5_txt p {
+    padding:0px ;
+    font-size: 16px;
+}
+}
+@media all and (max-width:830px){
+    .con4{
+        max-width: 425px;
+        height: 120px;
+        p{
+            font-size:20px ;
+        }
+    }
+    .con4 + p{
+        font-size: 26px;
+    }
+    .con6,.con7,.con13,.con14{
+        max-width: 425px;
+        text-align: center;
+    }
+    .but button{
+        padding: 12px 31px;
+        font-size: 20px;
+    }
+    .con8{
+        max-width: 100%;
+        p{
+            font-size: 20px !important;
+        }
+    }
+    .con9{
+        max-width: 425px;
+        p{
+            padding: 20px 13px;
+        }
+    }
+    .faq{
+        max-width: 425px;
+        p{
+            padding: 2px 13px;
+        }
+    }
+    #con12-p1{ 
+        font-size: 24px !important;
+    }
+    #con12-p2{ 
+        font-size: 19px !important;
+        text-align: center;
+    }
+    #con12-p3{ 
+        font-size: 20px !important;
+    }
+    #con15-p1{
+        font-size: 27px !important;
+    }
+    #con15-p2{
+        font-size: 16px !important;
+    }
+    #inp1{
+        padding: 8px !important;
+        width: 120px;
+        margin-bottom: 10px ;
+    }
+    #inp2{
+        padding: 8px !important;
+        width: 250px !important;
+        margin-bottom: 10px ;
+    }
+    #con15-inp button{
+        padding: 9px 25px !important;
+        
+    }
+    .copy p{
+        padding:20px 0px ;
+    }
+    .con5{
+        flex-direction: column;
+        width: 100%;
+        max-width: 425px;
+        
+    }
+    .con5_img{
+            width: 100%;
+        }
+    .con5_txt{
+        flex-direction: row;
+        width: 100%;
+        max-width: 425px;
+        p{
+            padding: 10px;
+        }
+    }
+    .con10_align{
+        flex-direction: column;
+        align-items: center;
+    }
+    .con10_left{
+        width: 100%;
+        max-width: 425px;
+    }
+    .con10_right{
+        width: 100%;
+        max-width: 425px;
+    }
+    .tpf1{
+        font-size: 70px;
+    }
+    .tpf2{
+        font-size: 24px;
+        margin-top: 78px;
+    }
+    .con3 .p1{
+        padding: 20px 0px ;
+        text-align: center;
+    }
+    .con1_side{
+        padding-right: 60px;
+    }
+    .log{
+        padding-left: 20px;
+    }
+    .sear{
+        width: 190px;
+    }
+}
+@media all and (max-width:425px){
+    .con4{
+        max-width:100%;
+        height: 100px;
+        p{
+            font-size:18px ;
+        }
+    }
+    .con4 + p{
+        font-size: 22px;
+    }
+    .con6,.con7,.con13,.con14{
+        max-width: 100%;
+        text-align: center;
+    }
+    .but button{
+        padding: 10px 30px;
+        font-size: 18px;
+    }
+    .con8{
+        max-width: 100%;
+        text-align: center;
+        p{
+            font-size: 18px !important;
+        }
+    }
+    .con9{
+        max-width: 100%;
+        p{
+            padding: 18px 11px;
+        }
+    }
+    .faq{
+        max-width: 100%;
+        p{
+            padding: 2px 13px;
+        }
+    }
+    #con12-p1{ 
+        font-size: 20px !important;
+    }
+    #con12-p2{ 
+        font-size: 18px !important;
+        text-align: center;
+    }
+    #con12-p3{ 
+        font-size: 18px !important;
+    }
+    .f_mid{
+        flex-direction: column;
+        text-align: center;
+    }
+    .copy p{
+        padding:20px 0px ;
+    }
+    .tpf1{
+        font-size: 50px;
+    }
+    .tpf2{
+        font-size: 19px;
+        margin-top: 73px;
+    }
+    .con10_right{
+        max-width: 100%;
+        img{
+            max-width: 90%;
+        }
+    }
+    .star i{
+        font-size: 28px;
+    }
+    .con10_l img{
+        max-width: 200px;
+    }
+    .con1_side{
+        flex-direction: column;
+        padding: 10px;
+        justify-content: center;
+    }
+    .con1{
+        justify-content: center;
+    }
+    .nav_ul{
+        right: 5px !important;
+        top: 150px !important;
+    }
+}
+@media all and (max-width:1102px){
+    .con2{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+@media all and (max-width:850px){
+    .nav_ul{
+        display: none;
+        position: absolute;
+        width: 100%;
+        max-width: 205px;
+        right: 5px;
+        top: 85px;
+        li{
+            background-color: #696969;
+        }
+    }
+    .con2{
+        flex-direction: row;
+        justify-content: space-between;
+        .fa-bars{
+            display: block;
+            padding-right: 30px;
+            position: relative;
+        }
+    }
+    .con2 .fa-bars:hover .nav_ul{
+        display: block;
+    }
+    .nav_ul li:hover{
+        background-color: #8dab7d;
+    }
+}
+    </style>
+</head>
+<body ondblclick="menu_cl()" >
+    <header>
+        <div class="con1">
+            <div class="con1_side">
+            <p class="log">Login | Signout</p>
+            <div class="sear">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+        </div>
+        <div class="con2">
+            <img src="logo.png" alt="logo">
+            <i id="line" onclick="menu_op()" class="fa-solid fa-bars" style="color: white;"></i>
+            <ul id="nav_ul" class="nav_ul"> 
+                <li>Franchise Hotlist</li>
+                <li>Industries <i class="fa-solid fa-chevron-down" style="color: yellow;"></i></li>
+                <li>Popular Searches <i class="fa-solid fa-chevron-down" style="color: yellow;"></i></li>
+                <li>Resources <i class="fa-solid fa-chevron-down" style="color: yellow;"></i></li>
+                <li>Expert Help</li>
+            </ul>
+        </div>
+    </header>
+    <div class="con3">
+        <p class="p1">HOME / <span style="color: #2082bf;font-weight: 400;">EXPERT HELP </span></p>
+        <div class="con4">
+            <p>Featured Franchise Banner Ad</p>
+        </div>
+        <p>Expert Franchise Consulting</p>
+        <div class="con5">
+            <div class="con5_img">
+                <img src="img1.png" alt="">
+            </div>
+            <div class="con5_txt">
+                <img src="img2.png" alt="">
+                <p>Schedule your <span style="font-weight: bold;"> FREE Franchise Consultation</span> with a top franchising expert today!</p>
+            </div>
+        </div>
+        <div class="con6">
+            <p style="    font-size: 20px;
+            font-weight: 600;">Perfect Franchise + Process + You = Success</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto vero, cumque deleniti officia minus similique eum eaque blanditiis adipisci eveniet dolores expedita sit, dolor fugiat magnam assumenda obcaecati consectetur accusamus? Doloribus, cupiditate quis. Quaerat ab laboriosam tempora, est repellendus suscipit dolores soluta ratione nam, ullam corporis aperiam velit illum magni? Dolores, blanditiis!</p>
+        </div>
+        <div class="con7">
+            <p style="font-size: 20px;
+            font-weight: 600;">First Step - Franchise Intro Call</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia odio labore, cupiditate deserunt ex dolorem pariatur nihil recusandae vitae maiores enim repudiandae voluptate perspiciatis deleniti molestias iusto, eveniet, quas aliquid! Doloribus, cupiditate quis. Quaerat ab laboriosam tempora, est repellendus suscipit dolores soluta ratione nam, ullam corporis aperiam velit illum magni? Dolores, blanditiis!</p>
+        </div>
+        <div class="but"> 
+        <button type="button"  >Get Expert Help</button>
+    </div>
+    <div class="con8">
+        <p style="
+            text-align: center;
+            font-size: 22px;
+            font-style: italic;
+        ">Simple, Step 4-Franchise Match Making Process</p>
+        <div class="con9">
+            <p class="p2">Step 1 : Consultation/ Criteria <i onclick="p_close2()" id="cl2" class="fa-solid fa-minus"></i> <i id="op2" onclick="p_open2()" class="fa-solid fa-plus"></i></p>
+            <!-- <p class="p2">Step 1 : Consultation/ Criteria <i onclick="p_close2()" id="cl2" class="fa-solid fa-minus"></i> <i id="op2" onclick="p_open(op2)" class="fa-solid fa-plus"></i></p> -->
+            <p id="p3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure delectus quaerat consectetur dolores error, mollitia corrupti non obcaecati facilis nemo illo sint pariatur tempore quia minus? Nobis assumenda sequi autem!</p>
+        </div>
+        <div class="con9">
+            <p class="p2">Step 2 : Franchise Targetting <i onclick="p_close3()" id="cl3" class="fa-solid fa-minus"></i> <i id="op3" onclick="p_open3()" class="fa-solid fa-plus"></i></p>
+            <p id="p4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tenetur consequatur adipisci veniam earum! Animi suscipit expedita magnam. Error, architecto rem ipsa eligendi quia soluta. Voluptatibus sequi quia consectetur ea.</p>
+        </div>
+        <div class="con9">
+            <p class="p2">Step 3 : Franchise Research <i onclick="p_close4()" id="cl4" class="fa-solid fa-minus"></i> <i id="op4" onclick="p_open4()" class="fa-solid fa-plus"></i></p>
+            <p id="p5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quaerat? Facilis beatae illo delectus ea rem ab hic ipsa commodi est atque eius at soluta fuga, eos fugit voluptate incidunt?</p>
+        </div>
+        <div class="con9">
+            <p class="p2">Strp 4 : Franchise Recomendations <i onclick="p_close5()"id="cl5" class="fa-solid fa-minus"></i> <i id="op5" onclick="p_open5()" class="fa-solid fa-plus"></i></p>
+            <p id="p6">Lorem ipsum dolor sit amet consectetur
+                 adipisicing elit. Cupiditate neque facilis, ducimus quasi eaque aliquam? Magni facilis sequi ullam blanditiis aliquam nihil nulla laborum, enim ex incidunt quia quas vitae.</p>
+        </div>
+    </div>
+    <p style="text-align: center;font-weight: 600;font-size: 20px; margin-top: 50px;">It all Starts with a 15 Mins Call . That's Easy</p>
+    <div class="but"> 
+        <button type="button" >Get Expert Help</button>
+    </div>
+    <div class="con10">
+        <div class="tpf">
+         <p class="tpf1" >TPF | </p>
+         <p class="tpf2" >The Perfect <br>Franchise</p>
+        </div>
+        <div class="con10_align">
+        <div class="con10_left">
+            <div class="star">
+            <i class="fa-solid fa-star" style="color: #ffffff;"></i>
+            <i class="fa-solid fa-star" style="color: #ffffff;"></i>
+            <i class="fa-solid fa-star" style="color: #ffffff;"></i>
+            <i class="fa-solid fa-star" style="color: #ffffff;"></i>
+            <i class="fa-solid fa-star" style="color: #ffffff;"></i>
+            </div>
+            <div class="con10_l">
+                <img src="amazon.png" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<span style="font-weight: 700;">Dolores natus porro delectus <span style="color: #2360ef;font-weight: 700;">animi veritatis sint voluptas quia deleniti odit</span></span>  . </p>
+                <p class="con10_txt" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis officia, cum ex labore explicabo soluta.</p>
+            </div>
+        </div>
+        <div class="con10_right">
+            <img src="book1.png" alt="">
+        </div>
+    </div>
+        <p style="color: white; text-align: center;font-size: 20px;padding-bottom:20px ;">Yes Let's Do It</p>
+    </div>
+
+    <p style="text-align: center;font-size: 20px;font-style: italic;margin: 60px 0px 40px 0px;font-weight: 400;">Frequently Asked Questions</p>
+        <div class="con11">
+            <div class="faq">
+                <p>Why should I have a franchise expert help me?<i class="fa-solid fa-plus"></i><i onclick="p_close2()" id="cl2" class="fa-solid fa-minus"></i> </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus fuga a amet tenetur quisquam ipsum blanditiis quia nisi illo ea.</p>
+            </div>
+            <div class="faq">
+                <p>Are you going to try to SELL me something?<i  class="fa-solid fa-plus"></i><i onclick="p_close2()" id="cl2" class="fa-solid fa-minus"></i></p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias magni maiores cum quas adipisci excepturi distinctio, voluptatibus doloremque nesciunt dicta.</p>
+            </div>
+            <div class="faq">
+                <p>How much does it cost to get help?<i class="fa-solid fa-plus"></i><i onclick="p_close2()" id="cl2" class="fa-solid fa-minus"></i></p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis possimus laborum deserunt numquam consequatur quaerat vero fuga! Voluptatibus, ea sint!</p>
+            </div>
+            <div class="faq">
+                <p>Who will I be speaking with?<i  class="fa-solid fa-plus"></i><i onclick="p_close2()" id="cl2" class="fa-solid fa-minus"></i></p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste nulla nihil, possimus porro beatae fuga repellendus? Facere voluptate minus id.</p>
+            </div>
+            <div class="faq">
+                <p>Can I just ask some questions?<i  class="fa-solid fa-plus"></i><i onclick="p_close2()" id="cl2" class="fa-solid fa-minus"></i></p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem aspernatur, delectus expedita beatae natus perferendis excepturi ipsam repellendus. In, voluptatem.</p>
+            </div>
+            <div class="faq">
+                <p>How can a schedule a call?<i  class="fa-solid fa-plus"></i><i onclick="p_close2()" id="cl2" class="fa-solid fa-minus"></i></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laboriosam repellendus culpa qui esse corrupti fuga hic itaque cum vero!</p>
+            </div>
+        </div>
+        <p style="text-align: center;font-size: 20px;margin: 60px 0px 0px 0px;font-weight: 600;">Have More Questions Click Below and Get Answers</p>
+        <div class="but"> 
+            <button type="button" >Get Expert Help</button>
+        </div>
+        <div class="con12">
+            <p id="con12-p1" style="font-size: 27px;
+            font-style: italic;
+            margin: 60px 0px 0px;font-weight: 400;">The Perfect Podcast Franchise</p>
+            <p id="con12-p2" style="font-size: 20px;
+            font-weight: 600;">Tune in and listen to co-hosts cris-kartherine and mark marlanien</p>
+            <img id="con12-i1" src="mob.png" alt="">
+            <p id="con12-p3" style="font-size: 22px;
+            font-weight: 600;
+            margin-top: 50px;">So many ways to listen</p>
+            <img id="con12-i2" src="links.png" alt="">
+        </div>
+        <p style="text-align: center;font-size: 20px;margin: 60px 0px 0px 0px;font-style: italic;">Franchise Experts at <span style="font-weight: 600;">YOUR</span> Service</p>
+    </div>
+    <div class="con13">
+        <img style="width: 100%;" src="experts.png" alt="">
+        </div>
+    <div class="con14">
+        <p style="font-weight: 600;">Commited to Your Success</p>
+        <p>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem debitis saepe aperiam tempora dignissimos repellat maxime explicabo! Labore cupiditate at quos. Laboriosam commodi quaerat quae porro ad laborum soluta ducimus? consectetur, adipisicing elit. Alias, hic qui laudantium iste rem itaque beatae voluptas vel neque nostrum. Excepturi eius accusantium numquam. Eius pariatur possimus cumque aspernatur iusto.</p>
+        <p>Lorem ipsum dolor sit Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor aut reprehenderit nemo ut quod? Laudantium deserunt natus aut mollitia, recusandae repellendus corrupti quas dolor, error eos provident delectus iusto consequatur obcaecati commodi autem expedita? Reprehenderit recusandae omnis eos nihil beatae. amet consectetur adipisicing elit. Necessitatibus enim reprehenderit modi, eligendi quis placeat! Debitis dolorum ducimus vel aut, consequatur perspiciatis repellendus suscipit, vitae ad quod at atque vero similique perferendis reiciendis et! Harum explicabo aliquam dolor temporibus eaque.</p>
+    </div>
+    <div class="but"> 
+        <button type="button" >Get Expert Help</button>
+    </div>
+    <div class="con15">
+        <p id="con15-p1" style="font-size: 35px;
+        font-weight: 500;
+        font-style: italic;
+        padding-top: 44px;
+        margin-bottom: 0px;">Subscribe to the Franchise Hotlist</p>
+        <p id="con15-p2" style="font-size: 19px;
+        font-weight: 500;
+        margin-top: 0px;">Get the scoop on the hottest brands! <span style="color: #8dab7d;font-weight: 700;">Sign up NOW!</span></p>
+        <div id="con15-inp" style="padding: 17px 0px 50px 0px;">
+            <input id="inp1" style="font-weight: 600;padding: 14px;" type="text" name="" placeholder="First Name">
+            <input id="inp2" style="font-weight: 600;padding: 14px;width: 360px;" type="email" placeholder="Email Address">
+            <button type="submit" style="
+            background-color: red;padding: 14px 30px;
+            border: none;color: white;">SUBMIT</button>
+        </div>
+    </div>
+    <footer class="con16">
+        <div class="con16_left">
+            <div class="ico">
+            <img src="linkedin.png" alt=""><img src="video.png" alt=""><img src="facebook.png" alt=""><img src="instagram.png" alt="">
+            </div>
+            <div class="txt" style="
+            padding-left: 60px;
+            ">
+            <p style="font-weight: 600;margin-bottom: -18px;">ABOUT THE FRANCHISE HOTLIST</p>
+            <p >Lorem ipsum dolor sit amet,Lorem ipsum, dolor sit amet consectetur adipisicing elit. consectetur adipisicing elit. Nesciunt, repudiandae ipsam! Aliquam, sit ut quisquam accusantium, Lorem ipsum dolor, sit amet <span>....LEARN MORE</span></p>
+        </div>
+        </div>
+        <div class="f_mid">
+        <div class="con16_mid">
+            <ul>
+                <li>Home</li>
+                <li>The Hotlist</li>
+                <li>Industries</li>
+                <li>Popular Searches</li>
+                <li>Videos</li>
+                <li>Articles</li>
+                <li>Free Downloads</li>
+                <li>Get Listed</li>
+
+            </ul>
+        </div>
+        <div class="con16_rig">
+            <ul>
+                <li>Franchise Match</li>
+                <li>Expert Help</li>
+                <li>About Us</li>
+                <li>Site Map</li>
+                <li>Terms &amp; COnditions</li>
+                <li>Privacy Policy</li>
+                <li>Contact Us</li>
+                
+            </ul>
+        </div>
+    </div>
+</footer>
+    <div class="con16 copy" style="display: inline-block;">
+        <p>Copyright © 2024 The Franchise Hotlist All rights reserved</p>
+    </div>
+
+     <script> 
+        function p_open2(){
+           document.getElementById('p3').style.display="block";
+           document.getElementById('op2').style.display="none";
+           document.getElementById('cl2').style.display="block";
+        }
+        function p_open3(){
+           document.getElementById('p4').style.display="block";
+           document.getElementById('op3').style.display="none";
+           document.getElementById('cl3').style.display="block";
+        }
+        function p_open4(){
+           document.getElementById('p5').style.display="block";
+           document.getElementById('op4').style.display="none";
+           document.getElementById('cl4').style.display="block";
+        }
+        function p_open5(){
+           document.getElementById('p6').style.display="block";
+           document.getElementById('op5').style.display="none";
+           document.getElementById('cl5').style.display="block";
+        }
+
+        function p_close2(){
+           document.getElementById('p3').style.display="none";
+           document.getElementById('op2').style.display="block";
+           document.getElementById('cl2').style.display="none";
+        }
+        function p_close3(){
+           document.getElementById('p4').style.display="none";
+           document.getElementById('op3').style.display="block";
+           document.getElementById('cl3').style.display="none";
+        }
+        function p_close4(){
+           document.getElementById('p5').style.display="none";
+           document.getElementById('op4').style.display="block";
+           document.getElementById('cl4').style.display="none";
+        }
+        function p_close5(){
+           document.getElementById('p6').style.display="none";
+           document.getElementById('op5').style.display="block";
+           document.getElementById('cl5').style.display="none";
+        }
+
+        function menu_op(){
+            document.getElementById('nav_ul').style.display="block";
+        }
+        function menu_cl(){
+            document.getElementById('nav_ul').style.display="none";
+        }
+    </script> 
+</body>
+</html>
